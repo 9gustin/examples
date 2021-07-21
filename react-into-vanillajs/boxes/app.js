@@ -1,20 +1,5 @@
 const root = document.querySelector("#root");
 
-const myBoxes = [
-  {
-    id: 'box1',
-    content: 'hello world! ✨'
-  },
-  {
-    id: 'box2',
-    content: 'React.js ⚛️'
-  },
-  {
-    id: 'box3',
-    content: '📦'
-  }
-];
-
 function Box(props) {
   return React.createElement('div', {
     className: 'box'
@@ -23,10 +8,8 @@ function Box(props) {
   );
 }
 
-const onRenderBoxes = myBoxes.map(box => (
-  React.createElement(Box, { key: box.id }, box.content)
-));
+const box =  React.createElement(Box, {}, '📦');
 
-const app = React.createElement("div", { className: "container" }, onRenderBoxes);
+const app = React.createElement("div", { className: "container" }, box);
 
 ReactDOM.render(app, root);
