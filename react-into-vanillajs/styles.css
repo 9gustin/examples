@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.box {
+  align-items: center;
+  background-color: #20232a;
+  border: 2px solid #20232a;
+  border-radius: 10px;
+  box-shadow: 8px 8px 53px 5px rgba(265, 265, 265, 0.2) inset;
+  color: #61dafb;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  -moz-box-shadow: 8px 8px 53px 5px rgba(265, 265, 265, 0.2) inset;
+  -webkit-box-shadow: 8px 8px 53px 5px rgba(265, 265, 265, 0.2) inset;
+}

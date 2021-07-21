@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Como agregar React en mi App Vainilla JS?</title>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      // Obtengo mi elemento root
+      const root = document.querySelector("#root");
+
+      // Creo un span con el contenido "Hello World ;)"
+      const helloSpan = React.createElement("span", {
+        children: "Hello World ;)",
+      });
+
+      // Renderizo mi span dentro del root
+      ReactDOM.render(helloSpan, root);
+    </script>
+  </body>
+</html>
