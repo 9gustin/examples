@@ -1,15 +1,15 @@
-const root = document.querySelector("#root");
+const root = document.querySelector("#root")
 
 function Box(props) {
   return React.createElement('div', {
     className: 'box'
   },
     props.children
-  );
+  )
 }
 
-const box =  React.createElement(Box, {}, '📦');
+const box =  React.createElement(Box, {}, '📦')
 
-const app = React.createElement("div", { className: "container" }, box);
+const app = React.createElement("div", { className: "container" }, box)
 
-ReactDOM.render(app, root);
+ReactDOM.render(app, root)

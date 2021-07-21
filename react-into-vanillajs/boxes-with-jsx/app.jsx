@@ -1,19 +1,4 @@
-const root = document.querySelector("#root");
-
-const myBoxes = [
-  {
-    id: 'box1',
-    content: 'hello world! ✨'
-  },
-  {
-    id: 'box2',
-    content: 'React.js ⚛️'
-  },
-  {
-    id: 'box3',
-    content: '📦'
-  }
-];
+const rootJSX = document.querySelector("#rootJSX")
 
 function Box(props) {
   return (
@@ -23,10 +8,10 @@ function Box(props) {
   )
 }
 
-const onRenderBoxes = myBoxes.map(box => (
-  <Box key={box.id}>{box.content}</Box>
-));
+const appJSX = (
+  <div className="container">
+    <Box>📦</Box>
+  </div>
+)
 
-const app = <div className="container">{onRenderBoxes}</div>
-
-ReactDOM.render(app, root);
+ReactDOM.render(appJSX, rootJSX)
